@@ -8,8 +8,10 @@
     --black: #111;
     --white: #FFFFFF;
     --font-family-main: 'Figtree', sans-serif;
+    --font-size-m-small: 12px;   
     --font-size-small: 14px;
     --font-size-medium: 16px;
+    --font-size-m-heading: 20px;
     --font-size-heading: 24px;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
@@ -160,4 +162,38 @@ footer {
 
 footer a{
     color: var(--black)
+}
+
+.attribution {
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+   
+
+.card{
+    width: 327px;
+}
+
+.card .card-img img{
+    width: 279px;
+}
+
+.card .card-info .title{ 
+    font-size: var(--font-size-m-heading);
+ }
+
+ .card .card-info .category,
+ .card .card-info .date{ 
+    font-size: var(--font-size-m-small);
+ }
+
+ .card .card-info .description{ 
+    font-size: var(--font-size-small);
+    width: 279px;
+ }
+
+
 }
